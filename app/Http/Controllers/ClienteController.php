@@ -30,5 +30,13 @@ class ClienteController extends Controller
 
     }
 
+    public function deletar($id) {
+        $cliente = new Cliente;
+
+        $cliente->find($id)->delete();
+
+        return redirect('/listar_cliente');
+
+    }
 }
 
