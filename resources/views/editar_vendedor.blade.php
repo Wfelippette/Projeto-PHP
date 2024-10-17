@@ -8,7 +8,7 @@
 <body>
 <form action="/editar_vendedor/{{$vendedor->id}}" method="post">
     @csrf
-    {{ method_field("PATCH")}}
+    {{ method_field("PUT")}}
     <label for="name">Nome</label>
     <input type="text" name="name" value="{{$vendedor->name}}">
 

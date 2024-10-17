@@ -24,8 +24,11 @@
         {{ method_field("DELETE")}}
         <input type="submit" value="delete cliente">
         </form>
+
+        <a href="/editar_cliente/{{$cliente->id}}">Editar</a>
       </td>
     </tr>
     @endforeach
+
   </table>
 </body>
